@@ -1,0 +1,118 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+}
+:root {
+	--Dark_gray: hsl(0, 0%, 59%);
+	--Dark_cyan: hsl(185, 75%, 39%);
+	--Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+	--Dark_grayish_blue: hsl(227, 10%, 46%);
+}
+	body {
+		font-family: "Kumbh Sans", sans-serif;
+		width: 100vw;
+		height: 100vh;
+		background: url(./images/bg-pattern-top.svg) -50% -60vh no-repeat,
+			url(./images/bg-pattern-bottom.svg) 150% 50vh no-repeat;
+		background-color: var(--Dark_cyan);
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.wrapper {
+		background-color: white;
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 5%;
+		overflow: hidden;
+		box-shadow: 0px 1.8px 2.3px rgba(0, 0, 0, -0.001),
+			0px 4.1px 5.3px rgba(0, 0, 0, 0), 0px 7.2px 9.2px rgba(0, 0, 0, 0.002),
+			0px 11.4px 14.7px rgba(0, 0, 0, 0.005),
+			0px 17.6px 22.6px rgba(0, 0, 0, 0.011),
+			0px 27.4px 35.3px rgba(0, 0, 0, 0.021),
+			0px 45.5px 58.6px rgba(0, 0, 0, 0.037), 0px 91px 117px rgba(0, 0, 0, 0.08);
+	}
+	.wrapper img {
+		border-radius: 5% 5% 0 0;
+	}
+	.author {
+		display: flex;
+		flex-direction: column;
+	}
+	.author img {
+		border-radius: 50%;
+		border: 5px solid white;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+	.author span {
+		transform: translate(0, -200%);
+	}
+	.age {
+		color: var(--Dark_gray);
+	}
+	.victor {
+		font-weight: 700;
+	}
+
+	.city {
+		text-align: center;
+		margin-top: 10%;
+		color: var(--Dark_gray);
+		font-weight: 400;
+	}
+	.stats {
+		width: 100%;
+		padding: 10% 30%;
+		margin: 0 30%;
+		border-top: 0.5px solid var(--Dark_gray);
+		display: flex;
+		align-items: space-between;
+	}
+	.followers {
+		margin: 0 0 0 10%;
+		font-weight: 700;
+		color: var(--Very_dark_desaturated_blue);
+	}
+	.f1 {
+		display: block;
+		color: var(--Dark_gray);
+		font-weight: 400;
+	}
+	.likes {
+		font-weight: 700;
+		margin: 0 10%;
+		color: var(--Very_dark_desaturated_blue);
+	}
+	.l2 {
+		display: block;
+		color: var(--Dark_gray);
+		font-weight: 400;
+	}
+	.photos {
+		font-weight: 700;
+		margin: 0 10%;
+		color: var(--Very_dark_desaturated_blue);
+	}
+	.p2 {
+		display: block;
+		color: var(--Dark_gray);
+		font-weight: 400;
+	}
+
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.attribution a {
+		color: hsl(228, 45%, 44%);
+	}
+
